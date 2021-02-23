@@ -1,6 +1,6 @@
-url: "https://painting.mahaputera.art" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://event.mahaputera.art" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
-title: "Painting Gallery" # the name of your site, e.g. ACME Corp.
+title: "Event Seni" # the name of your site, e.g. ACME Corp.
 
 github_username: taufardh
 facebook_username: taufardh
