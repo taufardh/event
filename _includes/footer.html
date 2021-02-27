@@ -33,12 +33,6 @@
       </a>
       <ul>
           <li><a id="comment" class="btn-floating btn-large green tooltipped modal-trigger" href="#modal-comment-section" data-position="left" data-delay="50" data-tooltip="Comment Group"><i class="material-icons large">chat</i></a></li>
-          <li><a class="btn-floating btn-large red tooltipped" onclick="playMusic();" data-position="left" data-delay="50" data-tooltip="Play Sound"><i class="material-icons large">play_arrow</i></a></li>
-          <li><a class="btn-floating red tooltipped" onclick="stopMusic();" data-position="left" data-delay="50" data-tooltip="Stop Sound"><i class="material-icons large">stop</i></a></li>
-          <li><a class="btn-floating grey darken-3 waves-effect tooltipped" onclick="nextSound();" data-position="left" data-delay="50" data-tooltip="Next Sound"><i class="material-icons">skip_next</i></a></li>
-          <li><a class="btn-floating grey darken-3 waves-effect tooltipped" onclick="prevSound();" data-position="left" data-delay="50" data-tooltip="Previous Sound"><i class="material-icons">skip_previous</i></a></li>
-          <li><a class="btn-floating grey darken-3 waves-effect tooltipped" onclick="setVolume('up');" data-position="left" data-delay="50" data-tooltip="Volume Up"><i class="material-icons">volume_up</i></a></li>
-          <li><a class="btn-floating grey darken-3 waves-effect tooltipped" onclick="setVolume('down');" data-position="left" data-delay="50" data-tooltip="Volume Down"><i class="material-icons">volume_down</i></a></li>
       </ul>
     </div>
 
@@ -73,121 +67,6 @@
           }
         );
       });
-
-      var videoPlaylist = [
-      {
-        position: "0",
-        title: "Jazz Instrument",
-        videoId: "37CO16Rjgfk"
-      },{
-        position: "1",
-        title: "Soft Piano Bar",
-        videoId: "rUh0hh-Xxbk"
-      },{
-        position: "2",
-        title: "Blues Boys Tune",
-        videoId: "29wMp2nnx_0"
-      },{
-        position: "3",
-        title: "Three O'Clock Blues",
-        videoId: "OnjQU_SXn24"
-      }];
-
-
-      let soundPlay = 0;
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-
-          height: '1024',
-          width: '1024',
-          videoId: '29wMp2nnx_0',
-          playerVars: {
-            'autoplay': 0,
-            'controls': 0,
-            'showinfo': 0,
-            'modestbranding': 0,
-            'loop': 1,
-            'fs': 0,
-            'cc_load_policty': 0,
-            'iv_load_policy': 3
-          },
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-
-      function onPlayerReady(event) {
-        /*event.target.playVideo();*/
-      }
-
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-          setTimeout(player.playVideo(),3000);
-
-        }
-      }
-
-      function playMusic() {
-        if(player.getPlayerState() == 1){
-          /*isPlaying*/
-          player.pauseVideo();
-        }else{
-          player.playVideo();
-        }
-      }
-
-      function stopMusic() {
-        player.stopVideo();
-      }
-
-      function nextSound(){
-        player.stopVideo();
-        if(soundPlay < videoPlaylist.length-1){
-          soundPlay = soundPlay+1;
-        }else{
-          soundPlay = 0;
-        }
-        player.loadVideoById(videoPlaylist[soundPlay].videoId);
-        player.playVideo();
-        player.seekTo(5);
-        Materialize.toast('Now Playing : '+videoPlaylist[soundPlay].title, 4000, 'rounded')
-      }
-
-      function prevSound(){
-        if(soundPlay > 0){
-          soundPlay = soundPlay-1;
-        }else{
-          soundPlay = videoPlaylist.length-1;
-        }
-
-        player.stopVideo();
-        player.loadVideoById(videoPlaylist[soundPlay].videoId);
-        player.seekTo(5);
-        Materialize.toast('Now Playing : '+videoPlaylist[soundPlay].title, 4000, 'rounded')
-      }
-
-      function setVolume(change){
-        var curr_volume = player.getVolume();
-        if(change == 'up'){
-            curr_volume = curr_volume + 10;
-            player.setVolume(curr_volume);
-        }
-        else if(change == 'down'){
-            curr_volume = curr_volume - 10;
-            player.setVolume(curr_volume);
-            //player.setVolume(volume);
-        }
-      }
     </script>
     
   </body>
