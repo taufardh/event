@@ -82,7 +82,7 @@ title: "Antologi Sajak Sunda Mulang"
                 <div class="gallery-header">
                     <span>{{ post.title }}</span>
                     <p class="caption">
-                    {% include date.html date=post.date %}
+                        {{ post.author }}
                     </p>
                 </div>
                 <div class="gallery-body" style="margin-top: 100px; padding: 20px;">
@@ -95,9 +95,9 @@ title: "Antologi Sajak Sunda Mulang"
                     <p class="description">
                     {{ post.author }}
                     </p>
-                    <p class="description">
+                    <!-- <p class="description">
                     {% include date.html date=post.date %}
-                    </p>
+                    </p> -->
                 </div>
                 <div class="gallery-action" style="margin-top: 40px;">
                     <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
