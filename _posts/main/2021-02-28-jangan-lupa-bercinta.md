@@ -2,7 +2,7 @@
 id_post: event-2
 title: 'Acara Explore Ad Alterum Syukuran'
 slug: 'explore-ad-alterum'
-date: 2021-02-28 18:00:00
+date: 2021-02-28 09:00:00
 image: 'https://i.postimg.cc/8cRtnscp/jangan-lupa-bercinta.jpg'
 categories: puisi
 generate_link: false
@@ -15,9 +15,7 @@ Buku kumpulan puisi Jangan Lupa Bercinta karya Yudhistira ANM Massardi menjadi p
 Lokasi : Singabarong, Cisayong Tasikmalaya  
 Waktu  : 09.00 - 12.00 WIB 
 
-<div class="center-align">
-![Jangan Lupa Bercinta](https://1.bp.blogspot.com/-wPu03w00P28/YDGy8DgzFgI/AAAAAAAAASs/wHGIjxUo1r0KjHV38ND7kGItGXiJdeIFgCLcBGAsYHQ/w429-h640/Yudhis.PNG "Jangan Lupa Bercinta")
-</div>
+![Jangan Lupa Bercinta](https://1.bp.blogspot.com/-wPu03w00P28/YDGy8DgzFgI/AAAAAAAAASs/wHGIjxUo1r0KjHV38ND7kGItGXiJdeIFgCLcBGAsYHQ/w429-h640/Yudhis.PNG "Jangan Lupa Bercinta"){:class="center-align"}
 
 
 >28 Februari 2021
