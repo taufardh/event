@@ -9,22 +9,15 @@ indexing: 'C'
 ---
 
 Séah na angin lebah lamping
-
 Ngabrangkeun tonggérét na kalapa
-
 Wanci beurang tinggal saléngkah
-
 Nitenan jogjog keur silih samber
-
 Ting araclok dina rang-rang saliara
-
 Manjangkeun carita jeung anjeun
-
 Nepungkeun beurang jeung burit
-
 Tonggeret jempling kapegat hibar layung
-
 Mépés kamelang jeung kahariwang
+
 
 >2021
 
