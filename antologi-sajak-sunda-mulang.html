@@ -1,3 +1,9 @@
+---
+layout: event
+title: "Antologi Sajak Sunda Mulang"
+---
+
+
 <nav class="nav-extended" style="background-color: darkred;">
     <div class="nav-background" style="opacity: 0.7">
       <div class="pattern active" style="background-image: url('https://i.postimg.cc/CxQBYfCH/slashbg.png');"></div>
@@ -20,8 +26,8 @@
       </ul>
 
       <div class="nav-header center font-style">
-        <h1>Event Seni</h1>
-        <div class="tagline">Daftar event seni dari berbagai macam kegiatan, dalam kreativitas dan keberagaman keindahan yang tertuang dalam sebuah moment.</div>
+        <h1>Antologi Sajak Sunda "Mulang"</h1>
+        <div class="tagline">Dina raraga mieling Poe Bahasa Indung Internasional anu parantos ditetepkeun ku UNESCO ping 21 Februari. Seja umajak nyerat sajak Sunda kangge Antologi "MULANG".</div>
       </div>
     </div>
 
@@ -29,7 +35,9 @@
       <div class="categories-container">
         <ul class="categories container">
           <li class="active"><a href="#all">All</a></li>
-          <li><a href="#puisi">Puisi</a></li>
+          <li><a href="#C">C</a></li>
+          <li><a href="#N">N</a></li>
+          <li><a href="#S">S</a></li>
         </ul>
       </div>
     </div>
@@ -61,3 +69,52 @@
           <a href="https://market.mahaputera.art"><i class="material-icons">local_mall</i> Market</a>
       </li> -->
   </ul>
+
+<!-- Gallery -->
+<div id="portfolio" class="section grey darken-2">
+  <div class="container">
+    <div class="gallery row">
+      <div id="randomness">
+        {% for post in site.posts %}
+          {% if post.path contains 'event-1-antologi-mulang' %}
+            <div id="{{ post.id_post }}-{{ post.slug }}" class="col l4 m6 s12 gallery-item gallery-expand gallery-filter {{ post.indexing }}">
+                <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span>{{ post.title }}</span>
+                    <p class="caption">
+                    {% include date.html date=post.date %}
+                    </p>
+                </div>
+                <div class="gallery-body" style="margin-top: 100px; padding: 20px;">
+                    <div class="title-wrapper">
+                    <h3>{{ post.title }}</h3>
+                    </div>
+                    <div class="description">
+                    {{ post.content }}
+                    </div>
+                    <p class="description">
+                    {{ post.author }}
+                    </p>
+                    <p class="description">
+                    {% include date.html date=post.date %}
+                    </p>
+                </div>
+                <div class="gallery-action" style="margin-top: 40px;">
+                    <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+                </div>
+                </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <script>
+        var div = document.querySelector('#randomness');
+        for (var i = div.children.length; i >= 0; i--) {
+            div.appendChild(div.children[Math.random() * i | 0]);
+        }
+      </script>
+    </div>
+
+  </div>
+
+</div><!-- /.container -->
