@@ -5,6 +5,7 @@ slug: 'explore-ad-alterum'
 date: 2021-02-21 18:00:00
 image: 'https://i.postimg.cc/8cRtnscp/jangan-lupa-bercinta.jpg'
 categories: puisi
+generate_link: false
 link: ''
 ---
 

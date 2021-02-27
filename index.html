@@ -17,9 +17,11 @@ title: "Event Seni"
                 </a>
                 <div class="gallery-header center-align">
                   <span>{{ post.title }}</span>
-                  <br>
-                  <hr>
-                  <a href="{{ site.url }}/{{ post.link }}" class="waves-effect waves-light btn"><i class="material-icons left">exit_to_app</i>Antologi</a>
+                  {% if post.generate_link == true %}
+                    <br>
+                    <hr>
+                    <a href="{{ site.url }}/{{ post.link }}" class="waves-effect waves-light btn"><i class="material-icons left">exit_to_app</i>Antologi</a>
+                  {% endif %}
                 </div>
                 <div class="gallery-body">
                   <div class="title-wrapper">
@@ -34,7 +36,9 @@ title: "Event Seni"
                   </p> -->
                 </div>
                 <div class="gallery-action">
-                  <a href="{{ site.url }}/{{ post.link }}" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">exit_to_app</i></a>
+                  {% if post.generate_link == true %}
+                    <a href="{{ site.url }}/{{ post.link }}" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">exit_to_app</i></a>
+                  {% endif %}
                 </div>
               </div>
             </div>
