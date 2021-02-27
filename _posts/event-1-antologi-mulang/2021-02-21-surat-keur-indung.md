@@ -8,13 +8,13 @@ author: 'Kidung Purnama'
 indexing: 'S'
 ---
 
-Dina mumunggang peuting
-Simpé ngalenyepan kahayang
-Pangsujudan rembes ku cipanon
-Ngaguar mangsa katukang
-Sésa implengan kamelang
-Baris poho lawas kalampahan
-Iwal gusti nu maha wenang 
+Dina mumunggang peuting  
+Simpé ngalenyepan kahayang  
+Pangsujudan rembes ku cipanon  
+Ngaguar mangsa katukang  
+Sésa implengan kamelang  
+Baris poho lawas kalampahan  
+Iwal gusti nu maha wenang  
 
 >2021
 
