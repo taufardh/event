@@ -5,6 +5,7 @@ slug: 'antologi-puisi-sunda-mulang'
 date: 2021-02-21 18:00:00
 image: 'https://i.postimg.cc/6qfL9ntS/mulang.jpg'
 categories: puisi
+link: 'antologi-sajak-sunda-mulang'
 ---
 
 Dina raraga mieling Poe Bahasa Indung Internasional anu parantos ditetepkeun ku UNESCO ping 21 Februari. Seja umajak nyerat sajak Sunda kangge Antologi "MULANG".

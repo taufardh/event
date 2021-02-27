@@ -17,10 +17,11 @@ title: "Event Seni"
                 </a>
                 <div class="gallery-header">
                   <span>{{ post.title }}</span>
+                  <a href="{{ site.url }}{{ site.baseurl }}{{ post.link }}" class="waves-effect waves-light btn"><i class="material-icons left">exit_to_app</i>Antologi</a>
                 </div>
                 <div class="gallery-body">
                   <div class="title-wrapper">
-                    <h3>{{ post.title }}</h3>
+                    <h5>{{ post.title }}</h5>
                     <span class="price">{% include date.html date=post.date %}</span>
                   </div>
                   <div class="description">
@@ -31,7 +32,7 @@ title: "Event Seni"
                   </p> -->
                 </div>
                 <div class="gallery-action">
-                  <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+                  <a href="{{ site.url }}{{ site.baseurl }}{{ post.link }}" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">exit_to_app</i></a>
                 </div>
               </div>
             </div>
