@@ -26,3 +26,5 @@ Penulis:
 
 facebook : [Kidung Purnama](https://www.facebook.com/kidungp){:target="_blank"}  
 instagram : [@kidungpurnama2012](https://www.instagram.com/kidungpurnama2012/){:target="_blank"}
+
+>Kidung Purnama
